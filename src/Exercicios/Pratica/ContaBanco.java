@@ -58,6 +58,8 @@ public class ContaBanco {
        int ValorAtual = this.getChequeEspecial() - ValorUtilizado;
 
         if (ValorAnterior != ValorAtual){
+
+            //System.out.println("Taxa de 20% a ser Cobrada");
           setChequeEspecial(getChequeEspecial() - ValorUtilizado);
             System.out.println("Cheque utilizado\n"+"Valor do cheque: "+ this.getChequeEspecial());
 
@@ -74,11 +76,11 @@ public class ContaBanco {
 
     public static void main(String[] args) {
 
-       // ContaBanco ContaBanco = new ContaBanco();
-       // ContaBanco.DepositarDinheiro();
+        ContaBanco ContaBanco = new ContaBanco();
+        ContaBanco.DepositarDinheiro();
        // ContaBanco.ConsultarSaldo();
-       // ContaBanco.utilizarCheque(30);
-       // ContaBanco.ConsultarCheque();
+        ContaBanco.utilizarCheque(30);
+        ContaBanco.ConsultarCheque();
        // ContaBanco.SacarDinheiro(50);
 
 
