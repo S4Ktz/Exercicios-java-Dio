@@ -26,8 +26,6 @@ public class exercicio6 {
             var resultado = numeroV % numeroI;
              verify = resultado == 0;
             System.out.println("teste " + numeroV % numeroI + " resultado " + resultado);
-
-
         }
     }
 }
