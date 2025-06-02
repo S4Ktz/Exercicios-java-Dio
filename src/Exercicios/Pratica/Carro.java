@@ -1,26 +1,32 @@
 package Exercicios.Pratica;
 
 public class Carro {
-   private boolean Ligar;
-   private boolean Desligar;
+   private boolean Ligado = false;
+   private  int marcha = 0;
    private int Velocidade = 0;
 
-    public void ligarCarro(){
+    public Carro() {
+      this.setLigar(false);
+      this.
+    }
+
+    public void ligarCarro(boolean Ligar){
      if (Ligar){
+       boolean Ligado = true;
          System.out.print("O carro está ligando...\n" + "Carro ligado");
      }else{
          System.out.println("Impossivel ligar o carro");
      }
     }
-    public void desligarCarro(){
-        if (Desligar){
+    public void desligarCarro(boolean Desligar){
+        if (Desligar && Velocidade ==0 && marcha==0){
             System.out.println("Desligando carro\n"+"Carro desligado");
         }else{
             System.out.println("impossivel desligar");
         }
     }
     public void Acelerar(){
-        if (isLigar()) {
+        if (isLigado()) {
             if (Velocidade < 120){
                 Velocidade++;
                 System.out.println("Acelerando");
@@ -32,7 +38,7 @@ public class Carro {
         }
     }
     public void Desacelerar(){
-        if (isLigar()){
+        if (isLigado()){
             if(Velocidade > 0){
                 Velocidade--;
                 System.out.println("Desacelerando");
@@ -42,32 +48,54 @@ public class Carro {
         }
     }
 
-   public static void Marcha(){
-        
+   public void Marcha(int marcha, int velocidade){
+       if (marcha == 0){
+           velocidade = 0;
+           System.out.println("Não pode acelerar");
+       }if (velocidade < 20){
+          marcha = 1;
+       }if (velocidade < 40){
+           marcha = 2;
+       }
+       if (velocidade < 60){
+           this.setMarcha(3);
+       }
+       if (velocidade < 80){
+           this.setMarcha(4);
+       }
+       if(velocidade < 100){
+           this.setMarcha(5);
+       }
+       if (velocidade < 120){
+           this.setMarcha(6);
+       }
    }
-
-
-    public boolean isLigar() {
-        return Ligar;
+   public void Direcao(){
+        if (Velocidade < 40){
+            System.out.println("Virando carro");
+        }else{
+            System.out.println("muito rapido pra virar");
+        }
+   }
+    public boolean isLigado() {
+        return Ligado;
     }
 
-    public void setLigar(boolean ligar) {
-        Ligar = ligar;
+    public void setLigar(boolean ligado) {
+        Ligado = ligado;
     }
-
-    public boolean isDesligar() {
-        return Desligar;
-    }
-
-    public void setDesligar(boolean desligar) {
-        Desligar = desligar;
-    }
-
     public int getVelocidade() {
         return Velocidade;
     }
-
     public void setVelocidade(int velocidade) {
         Velocidade = velocidade;
+    }
+
+    public int getMarcha() {
+        return marcha;
+    }
+
+    public void setMarcha(int marcha) {
+        this.marcha = marcha;
     }
 }
