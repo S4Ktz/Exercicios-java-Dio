@@ -33,7 +33,7 @@ public class Carro {
     }
     public void Desacelerar(){
         if (isLigar()){
-            if(Velocidade < 120){
+            if(Velocidade > 0){
                 Velocidade--;
                 System.out.println("Desacelerando");
             }
