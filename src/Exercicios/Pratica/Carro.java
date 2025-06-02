@@ -37,8 +37,15 @@ public class Carro {
                 Velocidade--;
                 System.out.println("Desacelerando");
             }
+        }else{
+            System.out.println("Impossivel desacelerar");
         }
     }
+
+   public static void Marcha(){
+        
+   }
+
 
     public boolean isLigar() {
         return Ligar;
