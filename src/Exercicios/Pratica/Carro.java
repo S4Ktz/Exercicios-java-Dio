@@ -5,15 +5,21 @@ public class Carro {
    private  int marcha = 0;
    private int Velocidade = 0;
 
+    public static void main(String[] args) {
+        Carro carro = new Carro();
+        carro.ligarCarro(true);
+        carro.Acelerar();
+    }
     public Carro() {
       this.setLigar(false);
-      this.
+      this.setMarcha(0);
+      this.setVelocidade(0);
     }
 
     public void ligarCarro(boolean Ligar){
      if (Ligar){
-       boolean Ligado = true;
-         System.out.print("O carro está ligando...\n" + "Carro ligado");
+       Ligado = true;
+         System.out.print("O carro está ligando...\n" + "Carro ligado\n");
      }else{
          System.out.println("Impossivel ligar o carro");
      }
@@ -26,11 +32,11 @@ public class Carro {
         }
     }
     public void Acelerar(){
-        if (isLigado()) {
-            if (Velocidade < 120){
+        if (Ligado) {
+            if (Velocidade <= 120){
                 Velocidade++;
                 System.out.println("Acelerando");
-            }if (Velocidade > 120){
+            }if (Velocidade >= 120){
                 System.out.println("Impossivel Acelerar mais");
             }
         }else{
@@ -39,7 +45,7 @@ public class Carro {
     }
     public void Desacelerar(){
         if (isLigado()){
-            if(Velocidade > 0){
+            if(Velocidade >= 0){
                 Velocidade--;
                 System.out.println("Desacelerando");
             }
@@ -52,26 +58,26 @@ public class Carro {
        if (this.getMarcha() == 0){
            velocidade = 0;
            System.out.println("Não pode acelerar");
-       }if (velocidade < 20){
+       }if (velocidade <= 20){
           this.setMarcha(1);
-       }if (velocidade < 40){
+       }if (velocidade <= 40){
            this.setMarcha(2);
        }
-       if (velocidade < 60){
+       if (velocidade <= 60){
            this.setMarcha(3);
        }
-       if (velocidade < 80){
+       if (velocidade <= 80){
            this.setMarcha(4);
        }
-       if(velocidade < 100){
+       if(velocidade <= 100){
            this.setMarcha(5);
        }
-       if (velocidade < 120){
+       if (velocidade <= 120){
            this.setMarcha(6);
        }
    }
    public void Direcao(){
-        if (Velocidade < 40){
+        if (Velocidade <= 40){
             System.out.println("Virando carro");
         }else{
             System.out.println("muito rapido pra virar");
