@@ -49,13 +49,13 @@ public class Carro {
     }
 
    public void Marcha(int marcha, int velocidade){
-       if (marcha == 0){
+       if (this.getMarcha() == 0){
            velocidade = 0;
            System.out.println("Não pode acelerar");
        }if (velocidade < 20){
-          marcha = 1;
+          this.setMarcha(1);
        }if (velocidade < 40){
-           marcha = 2;
+           this.setMarcha(2);
        }
        if (velocidade < 60){
            this.setMarcha(3);
