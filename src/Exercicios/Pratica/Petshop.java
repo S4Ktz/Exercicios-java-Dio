@@ -12,10 +12,10 @@ public class Petshop {
 
     public void PetshopMenu(){
         System.out.println("-----> 🐶PetShop🐶 <-----\n" +
-                "Quantidade de Pet na maquina: \n"+quantidadePet+
-                "Litros de água: \n"+this.getAguaL() +
-                "Litros de Shaampo: \n"+this.getShaampoL()+
-                "Estado de Limpeza da maquina: "+ (maquinaLimpa ? "Limpa" : "Suja")+
+                "Quantidade de Pet na maquina: "+quantidadePet+"\n"+
+                "Litros de água: "+this.getAguaL() +"\n"+
+                "Litros de Shaampo: "+this.getShaampoL()+"\n"+
+                "Estado de Limpeza da maquina: \n"+ (maquinaLimpa ? "Limpa" : "Suja")+
                              "----->🐶 PetShop🐶 <-----");
 
     }
