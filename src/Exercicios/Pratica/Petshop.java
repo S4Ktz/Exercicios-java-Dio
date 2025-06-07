@@ -15,7 +15,7 @@ public class Petshop {
                 "Quantidade de Pet na maquina: "+quantidadePet+"\n"+
                 "Litros de água: "+this.getAguaL() +"\n"+
                 "Litros de Shaampo: "+this.getShaampoL()+"\n"+
-                "Estado de Limpeza da maquina: \n"+ (maquinaLimpa ? "Limpa" : "Suja")+
+                "Estado de Limpeza da maquina: "+ (maquinaLimpa ? "Limpa" : "Suja")+"\n"+
                              "----->🐶 PetShop🐶 <-----");
 
     }
@@ -35,16 +35,16 @@ public class Petshop {
 
         //quantidade de pet/animal que pode ser colocado na maquina
         if (quantidadePet < 1){
-            System.out.println("A maquina está livre ✔");
+            System.out.println("A maquina está livre ✔\n");
         }else{
             System.out.println("A maquina está ocupada❌\n" +
-                    "quantidade de pet: "+quantidadePet);
+                    "quantidade de pet: "+quantidadePet+"\n");
         }
 
         // quantidade de água que pode ser colocada na maquina
         if (aguaL <= 30){
             System.out.println(//"Enchendo a maquina de banho\n" +
-                    "quantidade de agua: "+this.aguaL);
+                    "quantidade de agua: "+this.aguaL+"\n");
         }else{
             System.out.println("A maquina não suporta essa quantidade de agua\n" +
                     "insira entre (10L-30L)");
@@ -54,7 +54,7 @@ public class Petshop {
         // quantidade de shaampo que pode ser colocado na maquina
         if (shaampoL <= 10){
             System.out.println(//"Enchendo a maquina com Shaampo\n" +
-                    "quantidade de shaampo na maquina: "+this.shaampoL);
+                    "quantidade de shaampo na maquina: "+this.shaampoL+"\n");
         }else{
             System.out.println("A maquina não suporta essa quantidade de shaampo\n" +
                     "insira entre (2L-10L)");
