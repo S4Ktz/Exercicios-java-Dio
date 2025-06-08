@@ -39,6 +39,10 @@ public class Filme extends Ingresso {
         ingressoMeia ingressoMeia = new ingressoMeia();
 
         ingressoMeia.IngressoMeiaEntrada();
+        ingressoFamilia.AdicionarMembro();
+        ingressoFamilia.AdicionarMembro();
+        ingressoFamilia.AdicionarMembro();
+        ingressoFamilia.IngressoFamiliar();
 
         //filme.filmesEmCartaz();
        // filme.escolherFilme();
