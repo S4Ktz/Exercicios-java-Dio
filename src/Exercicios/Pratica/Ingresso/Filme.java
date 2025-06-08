@@ -38,10 +38,11 @@ public class Filme extends Ingresso {
         IngressoFamilia ingressoFamilia = new IngressoFamilia();
         ingressoMeia ingressoMeia = new ingressoMeia();
 
+        ingressoMeia.IngressoMeiaEntrada();
 
-        filme.filmesEmCartaz();
-        filme.escolherFilme();
-        filme.escolherDubladoOuLegendado();
+        //filme.filmesEmCartaz();
+       // filme.escolherFilme();
+        //filme.escolherDubladoOuLegendado();
 
     }
 }
