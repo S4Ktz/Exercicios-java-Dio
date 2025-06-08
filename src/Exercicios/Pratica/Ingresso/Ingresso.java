@@ -5,7 +5,7 @@ public class Ingresso {
    protected String filme;;
    protected String Ingresso;
 
-    protected Ingresso(){
+    protected void IngressoInteiro(){
         System.out.println("Filme: "+this.getFilme()+"\n"+
                             "Valor: "+this.getValor());
     }
