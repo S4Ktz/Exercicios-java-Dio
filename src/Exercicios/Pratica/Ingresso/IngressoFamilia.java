@@ -8,7 +8,7 @@ public class IngressoFamilia extends Ingresso {
     }
 
     public void IngressoFamiliar(){
-        if (membrosdafamilia <)
+        if (membrosdafamilia > 3)
     }
 
 
