@@ -14,8 +14,9 @@ public class Ingresso {
         return valor;
     }
 
-    public void setValor(double valor) {
+    public int setValor(double valor) {
         this.valor = valor;
+        return 0;
     }
 
     public String getFilme() {
