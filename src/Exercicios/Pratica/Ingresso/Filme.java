@@ -35,6 +35,10 @@ public class Filme extends Ingresso {
 
     public static void main(String[] args) {
         Filme filme = new Filme();
+        IngressoFamilia ingressoFamilia = new IngressoFamilia();
+        ingressoMeia ingressoMeia = new ingressoMeia();
+
+
         filme.filmesEmCartaz();
         filme.escolherFilme();
         filme.escolherDubladoOuLegendado();
