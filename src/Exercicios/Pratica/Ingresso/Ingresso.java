@@ -1,7 +1,7 @@
 package Exercicios.Pratica.Ingresso;
 
 public class Ingresso {
-   protected double valor;
+   protected double valor = 15;
    protected String filme;;
    protected String Ingresso;
 
