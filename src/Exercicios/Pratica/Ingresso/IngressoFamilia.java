@@ -9,7 +9,11 @@ public class IngressoFamilia extends Ingresso {
 
     public void IngressoFamiliar(){
         if (membrosdafamilia > 3){
-            
+           double valortotal = (valor * membrosdafamilia) / 5;
+            System.out.println("valor do ingresso: "+valortotal+ "\n" +
+                    "Você comprou o Ingresso familiar");
+        }else{
+            System.out.println("Erro ao comprar ingresso");
         }
     }
 
