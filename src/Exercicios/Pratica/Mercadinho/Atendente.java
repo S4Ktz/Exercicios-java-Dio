@@ -5,6 +5,7 @@ import java.util.Scanner;
 public final class Atendente extends Conta {
     Scanner scanner = new Scanner(System.in);
     int ValorDoCaixa;
+    boolean Caixa;
 
     @Override
     public void setAdministrador(boolean administrador) {
@@ -37,6 +38,28 @@ public final class Atendente extends Conta {
         System.out.println(isAdministrador() ? "Conta Administrativa":"Conta Normal");
 
         scanner.close();
+    }
+
+    public void ReceberPagamentos(int pagamento){
+        if (Caixa){
+            pagamento = getValorDoCaixa();
+            System.out.println("Pagamento realizado");
+            System.out.println("Valor no caixa: "+this.getValorDoCaixa());
+        }else{
+            System.out.println("O caixa está fechado, impossivel realizar pagamento");
+        }
+        pagamento = getValorDoCaixa();
+        System.out.println("Valor no caixa: "+this.getValorDoCaixa());
+    }
+    public void Caixa(boolean Caixa ){
+        if (Caixa){
+            System.out.println("Caixa está aberto para pagamentos" +
+                    "\n" + "Valor no caixa: "+this.getValorDoCaixa());
+        }else{
+            System.out.println("Caixa fechado");
+            System.out.println("Impossivel realizar pagamento");
+        }
+
     }
 
 
