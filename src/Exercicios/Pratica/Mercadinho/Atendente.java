@@ -2,7 +2,7 @@ package Exercicios.Pratica.Mercadinho;
 
 import java.util.Scanner;
 
-public final class Atende extends Conta {
+public final class Atendente extends Conta {
     Scanner scanner = new Scanner(System.in);
     int ValorDoCaixa;
 
@@ -11,7 +11,7 @@ public final class Atende extends Conta {
         super.setAdministrador(administrador = false);
     }
 
-    public Atende() {
+    public void AtendenteLogin() {
         System.out.println("Digite seu Usuario/nome: ");
         Usuario = scanner.next();
 
