@@ -77,7 +77,16 @@ public non-sealed class Gerente extends Conta {
         scanner.close();
     }
     public void GerenteAlterarSenha(){
-        System.out.println();
+        System.out.println("Deseja alterar sua senha?(S/N)");
+        var resposta = scanner.next();
+        if (resposta.equalsIgnoreCase("s")){
+            System.out.println("Digite sua nova senha: ");
+            senha = scanner.nextInt();
+            System.out.println("Nova senha: "+this.getSenha());
+        }else{
+            System.out.println("Senha não foi alterada");
+        }
+        scanner.close();
     }
 
     public void GerarRelatorio(){
