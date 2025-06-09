@@ -40,6 +40,37 @@ public final class Atendente extends Conta {
         scanner.close();
     }
 
+    public void AtendenteAlterarDados() {
+
+        System.out.println("Deseja alterar Email?: ");
+        var resposta = scanner.next();
+        if (resposta.equalsIgnoreCase("sim")){
+            System.out.println("Insira seu novo email: ");
+            email = scanner.next();
+            if (email.endsWith("@gmail.com")){
+                System.out.println("Email trocado com sucesso\n" +
+                        "Novo email: "+getEmail());
+            }
+        }else{
+            System.out.println("impossivel trocar email");
+        }
+
+        System.out.println("Deseja mudar usuario? ");
+        var resposta2 = scanner.next();
+        if (resposta2.equalsIgnoreCase("sim")){
+            System.out.println("Digite um novo nome de usuario: ");
+            Usuario = scanner.next();
+            System.out.println("usuario alterado com sucesso\n" +
+                    "Novo usuario: "+this.getUsuario());
+        } else if (resposta2.equalsIgnoreCase("não")) {
+            System.out.println("Usuario não alterado");
+        }else{
+            System.out.println("impossivel alterar usuario");
+        }
+        scanner.close();
+    }
+
+
     public void ReceberPagamentos(int pagamento){
         if (Caixa){
             pagamento = getValorDoCaixa();
