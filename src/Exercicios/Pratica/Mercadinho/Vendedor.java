@@ -46,6 +46,21 @@ int quantidadeDeVendas;
         email = null;
         Usuario = null;
     }
+
+    public void alterarSenha(){
+        System.out.println("Deseja alterar sua senha?(S/N) ");
+        scanner.next();
+        if (scanner.next().equalsIgnoreCase("s")){
+            System.out.println("Altere sua senha: ");
+          senha = scanner.nextInt();
+            System.out.println("senha alterada com sucesso");
+        }else{
+            System.out.println("Sua senha não será alterada");
+        }
+    }
+
+    public
+
     public void realizarVenda(int quantidadeDeVendas){
         System.out.println("-----> Realizando Vendas...🚚💨 <-----" +"\n"+
                              "Vendas realizada com sucesso");
