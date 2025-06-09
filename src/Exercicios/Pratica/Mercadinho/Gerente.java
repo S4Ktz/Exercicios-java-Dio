@@ -10,7 +10,7 @@ public non-sealed class Gerente extends Conta {
         super.setAdministrador(administrador = true);
     }
 
-    public Gerente() {
+    public void GerenteLogin() {
         System.out.println("Digite seu Usuario/nome: ");
         Usuario = scanner.next();
 
@@ -40,8 +40,7 @@ public non-sealed class Gerente extends Conta {
     }
 
     public void GerarRelatorio(){
-        System.out.println("Gerando relatorio...");
-        System.out.println();
+       return ;
     }
 
 }
