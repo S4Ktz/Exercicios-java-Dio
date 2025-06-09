@@ -1,10 +1,10 @@
 package Exercicios.Pratica.Mercadinho;
 
-public sealed class Conta permits Gerente {
-    String Usuario;
-    String email;
-    int senha;
-    boolean Administrador;
+public sealed class Conta permits Gerente,Vendedor {
+  protected String Usuario;
+  protected String email;
+  protected int senha;
+  protected boolean Administrador;
 
     public Conta() {
         System.out.println("Nome do usuario: "+this.getUsuario()+
