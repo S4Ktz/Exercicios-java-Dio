@@ -1,6 +1,6 @@
 package Exercicios.Pratica.Mercadinho;
 
-public sealed class Conta permits Gerente,Vendedor {
+public sealed class Conta permits Gerente,Vendedor,Atende{
   protected String Usuario;
   protected String email;
   protected int senha;
