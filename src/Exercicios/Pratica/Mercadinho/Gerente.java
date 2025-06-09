@@ -33,9 +33,15 @@ public non-sealed class Gerente extends Conta {
             System.out.println("User@gmail invalido");
         }
 
-        System.out.println(isAdministrador() ? "Conta Administrativa":"Conta Normal");
+        System.out.println(isAdministrador() ? "Conta Administrativa" : "Conta Normal");
 
         scanner.close();
+
+    }
+
+    public void GerarRelatorio(){
+        System.out.println("Gerando relatorio...");
+        System.out.println();
     }
 
 }
