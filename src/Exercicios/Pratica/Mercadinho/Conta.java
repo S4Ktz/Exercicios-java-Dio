@@ -1,6 +1,6 @@
 package Exercicios.Pratica.Mercadinho;
 
-public sealed class Conta permits Gerente,Vendedor,Atende{
+public sealed class Conta permits Gerente,Vendedor, Atendente {
   protected String Usuario;
   protected String email;
   protected int senha;
@@ -11,6 +11,13 @@ public sealed class Conta permits Gerente,Vendedor,Atende{
                             "\n" + "Email: "+this.getEmail() + "\n" +
                             "Senha do usuario: "+this.getSenha()+
                             "\n"+"Conta Adm: "+ (isAdministrador() ? "Conta Administrativa" : "Conta Normal"));
+
+    }
+
+    public void Login(){
+
+    }
+    public void LogOff(){
 
     }
 
