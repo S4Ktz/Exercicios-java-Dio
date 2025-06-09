@@ -23,7 +23,19 @@ public non-sealed class Gerente extends Conta {
 
         }
 
+
         System.out.println("Digite seu email: ");
-        
+        email = scanner.next();
+
+        if (this.getEmail().endsWith("@gmail.com")) {
+            System.out.println("Email logado com sucesso");
+        } else {
+            System.out.println("User@gmail invalido");
+        }
+
+        System.out.println(isAdministrador() ? "Conta Administrativa":"Conta Normal");
+
+        scanner.close();
     }
+
 }
