@@ -14,7 +14,7 @@ public class MercadinhoMain {
    public void GerenteMenu(){
        System.out.println("Nome/usuario: \n" +this.gerente.getUsuario() +
                          "Email: \n" + "Tipo de conta: "+this.gerente.isAdministrador());
-       this.gerente.GerarRelatorio(vendedor.RelatorioDeVendas());
+       System.out.printf();
    }
 
 
