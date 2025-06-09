@@ -77,7 +77,7 @@ public non-sealed class Gerente extends Conta {
         scanner.close();
     }
     public void GerenteAlterarSenha(){
-        
+        System.out.println();
     }
 
     public void GerarRelatorio(){
