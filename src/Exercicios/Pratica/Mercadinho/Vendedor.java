@@ -41,10 +41,15 @@ int quantidadeDeVendas;
 
         scanner.close();
     }
+    public void VendedorLogOff(){
+        System.out.println("-----> Realizando LogOff <-----");
+        email = null;
+        Usuario = null;
+    }
     public void realizarVenda(int quantidadeDeVendas){
         System.out.println("-----> Realizando Vendas...🚚💨 <-----" +"\n"+
                              "Vendas realizada com sucesso");
-        
+
     }
     public int getQuantidadeDeVendas() {
         return quantidadeDeVendas;
