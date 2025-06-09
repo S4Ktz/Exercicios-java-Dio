@@ -95,6 +95,10 @@ int quantidadeDeVendas;
                              "Vendas realizada com sucesso");
 
     }
+    public  void RelatorioDeVendas(){
+        System.out.println("-----> Gerando Relatorio De Vendas <-----");
+        System.out.println("Quantidade de vendas: "+this.getQuantidadeDeVendas());
+    }
     public int getQuantidadeDeVendas() {
         return quantidadeDeVendas;
     }
