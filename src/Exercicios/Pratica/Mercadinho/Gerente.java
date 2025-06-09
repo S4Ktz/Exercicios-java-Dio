@@ -38,6 +38,15 @@ public non-sealed class Gerente extends Conta {
         scanner.close();
 
     }
+
+
+    public void GerenteLogOff() {
+        Usuario = null;
+        email = null;
+        System.out.println(this.getUsuario() +"\n" +
+                            this.getEmail());
+    }
+
     public void GerenteAlterarDados() {
 
         System.out.println("Deseja alterar Email?: ");
@@ -67,6 +76,7 @@ public non-sealed class Gerente extends Conta {
         }
         scanner.close();
     }
+    public void GerenteAlterarSenha
 
     public void GerarRelatorio(){
        return ;
