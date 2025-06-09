@@ -47,7 +47,7 @@ int quantidadeDeVendas;
         Usuario = null;
     }
 
-    public void alterarSenha(){
+    public void VendedorAlterarSenha(){
         System.out.println("Deseja alterar sua senha?(S/N) ");
       var resposta = scanner.next();
         if (scanner.next().equalsIgnoreCase("s")){
@@ -60,7 +60,7 @@ int quantidadeDeVendas;
         scanner.close();
     }
 
-    public void alterarDados() {
+    public void VendedorAlterarDados() {
 
         System.out.println("Deseja alterar Email?: ");
        var resposta = scanner.next();
