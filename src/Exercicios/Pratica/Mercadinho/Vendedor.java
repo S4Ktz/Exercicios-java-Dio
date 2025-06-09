@@ -13,7 +13,7 @@ int quantidadeDeVendas;
         super.setAdministrador(administrador = false);
     }
 
-    public Vendedor() {
+    public void VendedorLogin() {
 
         System.out.println("Digite seu Usuario/nome: ");
         Usuario = scanner.next();
@@ -41,8 +41,10 @@ int quantidadeDeVendas;
 
         scanner.close();
     }
-    public int realizarVenda(){
-        return quantidadeDeVendas++;
+    public void realizarVenda(int quantidadeDeVendas){
+        System.out.println("-----> Realizando Vendas...🚚💨 <-----" +"\n"+
+                             "Vendas realizada com sucesso");
+        
     }
     public int getQuantidadeDeVendas() {
         return quantidadeDeVendas;
