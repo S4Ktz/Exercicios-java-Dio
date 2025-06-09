@@ -60,10 +60,22 @@ int quantidadeDeVendas;
         scanner.close();
     }
 
-    public void alterarDados(){
+    public void alterarDados() {
+
         System.out.println("Deseja alterar Email?: ");
         email = scanner.next();
-        switch ()
+        if (scanner.next().equalsIgnoreCase("sim")){
+            System.out.println("Insira seu novo email: ");
+            email = scanner.next();
+            if (email.endsWith("@gmail.com")){
+                System.out.println("Email trocado com sucesso\n" +
+                        "Novo email: "+getEmail());
+            }
+        }else{
+            System.out.println("impossivel trocar email");
+        }
+
+        System.out.println("Deseja mudar usuario? ");
     }
 
     public void realizarVenda(int quantidadeDeVendas){
