@@ -2,7 +2,7 @@ package Exercicios.Pratica.Mercadinho;
 
 import java.util.Scanner;
 
-public non-sealed class Vendedor extends Conta {
+public non-sealed class Vendedor extends Conta  {
 
 int quantidadeDeVendas;
 
@@ -41,7 +41,9 @@ int quantidadeDeVendas;
 
         scanner.close();
     }
-
+    public int realizarVenda(){
+        return quantidadeDeVendas++;
+    }
     public int getQuantidadeDeVendas() {
         return quantidadeDeVendas;
     }
