@@ -64,7 +64,7 @@ int quantidadeDeVendas;
 
         System.out.println("Deseja alterar Email?: ");
        var resposta = scanner.next();
-        if (scanner.next().equalsIgnoreCase("sim")){
+        if (resposta.equalsIgnoreCase("sim")){
             System.out.println("Insira seu novo email: ");
             email = scanner.next();
             if (email.endsWith("@gmail.com")){
@@ -77,12 +77,17 @@ int quantidadeDeVendas;
 
         System.out.println("Deseja mudar usuario? ");
        var resposta2 = scanner.next();
-        if (scanner.next().equalsIgnoreCase("sim")){
+        if (resposta2.equalsIgnoreCase("sim")){
             System.out.println("Digite um novo nome de usuario: ");
             Usuario = scanner.next();
             System.out.println("usuario alterado com sucesso\n" +
                     "Novo usuario: "+this.getUsuario());
+        } else if (resposta2.equalsIgnoreCase("não")) {
+            System.out.println("Usuario não alterado");
+        }else{
+            System.out.println("impossivel alterar usuario");
         }
+
     }
 
     public void realizarVenda(int quantidadeDeVendas){
