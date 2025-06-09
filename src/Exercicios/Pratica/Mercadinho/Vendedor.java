@@ -87,7 +87,7 @@ int quantidadeDeVendas;
         }else{
             System.out.println("impossivel alterar usuario");
         }
-
+        scanner.close();
     }
 
     public void realizarVenda(int quantidadeDeVendas){
