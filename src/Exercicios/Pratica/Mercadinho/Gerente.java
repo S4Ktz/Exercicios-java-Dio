@@ -2,8 +2,9 @@ package Exercicios.Pratica.Mercadinho;
 
 import java.util.Scanner;
 
-public non-sealed class Gerente extends Conta{
+public non-sealed class Gerente extends Conta {
     Scanner scanner = new Scanner(System.in);
+
     @Override
     public void setAdministrador(boolean administrador) {
         super.setAdministrador(administrador = true);
@@ -11,6 +12,18 @@ public non-sealed class Gerente extends Conta{
 
     public Gerente() {
         System.out.println("Digite seu Usuario/nome: ");
-        getUsuario()
+        Usuario = scanner.next();
+
+        System.out.println("Digite sua senha: ");
+        senha = scanner.nextInt();
+        if (senha == 12345) {
+            System.out.println("senha correta");
+        } else {
+            System.out.println("senha incorreta");
+
+        }
+
+        System.out.println("Digite seu email: ");
+        
     }
 }
