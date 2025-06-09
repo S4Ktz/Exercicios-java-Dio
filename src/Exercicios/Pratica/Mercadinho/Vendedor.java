@@ -57,9 +57,14 @@ int quantidadeDeVendas;
         }else{
             System.out.println("Sua senha não será alterada");
         }
+        scanner.close();
     }
 
-    public
+    public void alterarDados(){
+        System.out.println("Deseja alterar Email?: ");
+        email = scanner.next();
+        switch ()
+    }
 
     public void realizarVenda(int quantidadeDeVendas){
         System.out.println("-----> Realizando Vendas...🚚💨 <-----" +"\n"+
