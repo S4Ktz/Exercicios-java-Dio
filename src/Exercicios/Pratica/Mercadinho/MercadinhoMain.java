@@ -42,14 +42,30 @@ public final class MercadinhoMain {
                     scanner.close();
                     return;
                 }
-            }
-        }
+                default -> {
+                    System.out.println("Comando invalido");
+                }
 
+
+            }
+            System.out.println("\naperte entrer para continuar");
+            scanner.nextLine();
+        }
 //     Gerente.GerarRelatorio();
 //     Vendedor.realizarVenda();
 //
 //        System.out.println(Vendedor.RelatorioDeVendas());
     }
+
+    public static void exibirMenu(){
+        System.out.println("Comandos\n" +
+                "[1] Realizar Relatorio\n" +
+                "[2] Realizar Venda\n" +
+                "[3] Fazer pagamento\n" +
+                "[4] Fechar Loja");
+    }
+
+
 
    public void GerenteMenu(){
        System.out.println("Nome/usuario: \n" + gerente.getUsuario() +
