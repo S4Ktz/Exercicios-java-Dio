@@ -2,7 +2,7 @@ package Exercicios.Pratica.Mercadinho;
 
 import java.util.Scanner;
 
-public final class Atendente extends Conta {
+public non-sealed class Atendente extends Conta {
     Scanner scanner = new Scanner(System.in);
     int ValorDoCaixa;
     boolean Caixa;
@@ -71,7 +71,9 @@ public final class Atendente extends Conta {
     }
 
 
-    public void ReceberPagamentos(int pagamento){
+    public void ReceberPagamentos(){
+        int pagamento;
+
         if (Caixa){
             pagamento = getValorDoCaixa();
             System.out.println("Pagamento realizado");
