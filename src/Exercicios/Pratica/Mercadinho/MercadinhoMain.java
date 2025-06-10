@@ -22,6 +22,7 @@ public final class MercadinhoMain {
             case "1","Relatorio" -> Gerente.GerarRelatorio();
             case "2","Realizar Venda" -> Vendedor.realizarVenda();
             case "3","Inserir Pagamento" -> {
+
                 System.out.println("Insira o Valor a ser pago: ");
                int pagamento = Integer.parseInt(scanner.next());
                if (atendente.Caixa){
@@ -29,9 +30,12 @@ public final class MercadinhoMain {
                            "pagamento realizado com sucesso\n" +
                            "Valor do pagemento: "+pagamento);
                }else{
-                   s
+                   System.out.println("Caixa fechado\n" +
+                           "pagamento não pode ser realizado");
                }
+               scanner.close();
             }
+            case "4","Sair" ->
         }
 
      Gerente.GerarRelatorio();
