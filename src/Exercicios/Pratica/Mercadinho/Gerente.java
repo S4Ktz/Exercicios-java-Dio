@@ -91,7 +91,7 @@ public non-sealed class Gerente extends Conta {
 
     public static Object GerarRelatorio(){
         System.out.println("Gerando Relatorio . . .");
-        return null;
+        return "";
     }
 
 }
