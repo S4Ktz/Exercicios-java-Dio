@@ -93,7 +93,7 @@ static int quantidadeDeVendas;
     public static void realizarVenda(){
       // setQuantidadeDeVendas(quantidadeDeVendas + getQuantidadeDeVendas());
         quantidadeDeVendas++;
-        
+
         System.out.println("-----> Realizando Vendas...🚚💨 <-----" +"\n"+
                              "Vendas realizada com sucesso"+ "\n"+
                                 "Vendas feitas: "+getQuantidadeDeVendas());
