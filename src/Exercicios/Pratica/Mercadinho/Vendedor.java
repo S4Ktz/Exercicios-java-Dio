@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public non-sealed class Vendedor extends Conta  {
 
-int quantidadeDeVendas;
+static int quantidadeDeVendas;
 
     Scanner scanner = new Scanner(System.in);
 
@@ -90,20 +90,24 @@ int quantidadeDeVendas;
         scanner.close();
     }
 
-    public void realizarVenda(int quantidadeDeVendas){
+    public static void realizarVenda(int quantidadeDeVendas){
+       setQuantidadeDeVendas(quantidadeDeVendas + getQuantidadeDeVendas());
+
         System.out.println("-----> Realizando Vendas...🚚💨 <-----" +"\n"+
-                             "Vendas realizada com sucesso");
+                             "Vendas realizada com sucesso"+ "\n"+
+                                "Vendas feitas: "+getQuantidadeDeVendas());
 
     }
-    public  void RelatorioDeVendas(){
+    public static Object  RelatorioDeVendas(){
         System.out.println("-----> Gerando Relatorio De Vendas <-----");
-        System.out.println("Quantidade de vendas: "+this.getQuantidadeDeVendas());
+        System.out.println("Quantidade de vendas: "+getQuantidadeDeVendas());
+       return "";
     }
-    public int getQuantidadeDeVendas() {
+    public static int getQuantidadeDeVendas() {
         return quantidadeDeVendas;
     }
 
-    public void setQuantidadeDeVendas(int quantidadeDeVendas) {
-        this.quantidadeDeVendas = quantidadeDeVendas;
+    public static void setQuantidadeDeVendas(int quantidadeDeVendas) {
+        Vendedor.quantidadeDeVendas = quantidadeDeVendas;
     }
 }
