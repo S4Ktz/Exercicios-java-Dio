@@ -17,11 +17,17 @@ public final class MercadinhoMain {
         Scanner scanner = new Scanner(System.in);
         while (true) {
 
-            System.out.println("Escolha uma opção");
+        exibirMenu();
+
+
+            System.out.println("Escolha uma opção: ");
             String escolha = scanner.next();
 
             switch (escolha) {
-                case "1", "Relatorio" -> Gerente.GerarRelatorio();
+                case "1", "Relatorio" ->{
+                    System.out.print(Gerente.GerarRelatorio());
+                    System.out.println(Vendedor.RelatorioDeVendas());
+                }
                 case "2", "Realizar Venda" -> Vendedor.realizarVenda();
                 case "3", "Inserir Pagamento" -> {
 
@@ -58,11 +64,11 @@ public final class MercadinhoMain {
     }
 
     public static void exibirMenu(){
-        System.out.println("Comandos\n" +
-                "[1] Realizar Relatorio\n" +
-                "[2] Realizar Venda\n" +
-                "[3] Fazer pagamento\n" +
-                "[4] Fechar Loja");
+        System.out.println("-----> Comandos <-----\n" +
+                "[1] Realizar Relatorio📄\n" +
+                "[2] Realizar Venda💸\n" +
+                "[3] Fazer pagamento💸\n" +
+                "[4] Fechar Loja👋\n");
     }
 
 
