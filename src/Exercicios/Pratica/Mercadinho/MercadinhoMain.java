@@ -6,13 +6,19 @@ public class MercadinhoMain {
     private static Gerente gerente;
     private static Vendedor vendedor;
     public void Contas() {
-        Scanner scanner = new Scanner(System.in);
         Conta conta = new Conta();
         Vendedor vendedor = new Vendedor();
         Atendente atendente = new Atendente();
         Gerente gerente = new Gerente();
     }
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Escolha uma opção");
+        String escolha = scanner.next();
+        switch (escolha){
+            case "1" -> Gerente.GerarRelatorio();
+            case "2" -> Vendedor.realizarVenda(10);
+        }
      Gerente.GerarRelatorio();
      Vendedor.realizarVenda(10);
         System.out.println(Vendedor.RelatorioDeVendas());
