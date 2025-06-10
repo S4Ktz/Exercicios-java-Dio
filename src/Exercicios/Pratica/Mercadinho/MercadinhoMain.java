@@ -15,33 +15,40 @@ public final class MercadinhoMain {
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        while (true) {
 
-        System.out.println("Escolha uma opção");
-        String escolha = scanner.next();
-        switch (escolha){
-            case "1","Relatorio" -> Gerente.GerarRelatorio();
-            case "2","Realizar Venda" -> Vendedor.realizarVenda();
-            case "3","Inserir Pagamento" -> {
+            System.out.println("Escolha uma opção");
+            String escolha = scanner.next();
 
-                System.out.println("Insira o Valor a ser pago: ");
-               int pagamento = Integer.parseInt(scanner.next());
-               if (atendente.Caixa){
-                   System.out.println("Caixa está aberto para pagamentos\n" +
-                           "pagamento realizado com sucesso\n" +
-                           "Valor do pagemento: "+pagamento);
-               }else{
-                   System.out.println("Caixa fechado\n" +
-                           "pagamento não pode ser realizado");
-               }
-               scanner.close();
+            switch (escolha) {
+                case "1", "Relatorio" -> Gerente.GerarRelatorio();
+                case "2", "Realizar Venda" -> Vendedor.realizarVenda();
+                case "3", "Inserir Pagamento" -> {
+
+                    System.out.println("Insira o Valor a ser pago: ");
+                    int pagamento = Integer.parseInt(scanner.next());
+                    if (atendente.Caixa) {
+                        System.out.println("Caixa está aberto para pagamentos\n" +
+                                "pagamento realizado com sucesso\n" +
+                                "Valor do pagemento: " + pagamento);
+                    } else {
+                        System.out.println("Caixa fechado\n" +
+                                "pagamento não pode ser realizado");
+                    }
+                    scanner.close();
+                }
+                case "4", "Sair" -> {
+                    System.out.println("Fechando a loja");
+                    scanner.close();
+                    return;
+                }
             }
-            case "4","Sair" ->
         }
 
-     Gerente.GerarRelatorio();
-     Vendedor.realizarVenda();
-
-        System.out.println(Vendedor.RelatorioDeVendas());
+//     Gerente.GerarRelatorio();
+//     Vendedor.realizarVenda();
+//
+//        System.out.println(Vendedor.RelatorioDeVendas());
     }
 
    public void GerenteMenu(){
