@@ -29,7 +29,7 @@ public final class MercadinhoMain {
                            "pagamento realizado com sucesso\n" +
                            "Valor do pagemento: "+pagamento);
                }else{
-                   sout
+                   s
                }
             }
         }
