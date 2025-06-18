@@ -15,6 +15,14 @@ public class pratica1 {
         teste.add("ronaldinho");
         teste.add("joão");
 
+       ArrayList<Integer> teste2 = new ArrayList<>(); // Integer -> para Numeros inteiros(int)
+
+
+
+
+
+
+
         System.out.println("Imprimindo ArrayList");
 
        // for (int i = 0; i < teste.size(); i++){
