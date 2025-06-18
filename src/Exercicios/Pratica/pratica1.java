@@ -16,10 +16,15 @@ public class pratica1 {
         teste.add("joão");
 
         System.out.println("Imprimindo ArrayList");
-        for (int i = 0; i < teste.toArray().length; i++){
-            System.out.println(teste.get(i));
 
+       // for (int i = 0; i < teste.size(); i++){
+           // System.out.println(teste.get(i));
 
+        //For Melhorado
+            for (String nome : teste) {
+                System.out.println(nome);
+            }
         }
+
     }
-}
+
