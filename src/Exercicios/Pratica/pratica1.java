@@ -15,8 +15,13 @@ public class pratica1 {
         teste.add("ronaldinho");
         teste.add("joão");
 
-       ArrayList<Integer> teste2 = new ArrayList<>(); // Integer -> para Numeros inteiros(int)
+        ArrayList<Integer> teste2 = new ArrayList<>(); // Integer -> para Numeros inteiros(int)
         ArrayList<Float> teste3 = new ArrayList<>(); // Float -> para Numeros flutuantes = 2.0 (float)
+        ArrayList<Double> teste4 = new ArrayList<>(); // Double -> para Numeros flutuantes = 2.0 (double)
+        ArrayList<Character> teste5 = new ArrayList<>(); // Character -> para letras (char)
+
+
+
 
 
 
